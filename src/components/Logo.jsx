@@ -3,7 +3,7 @@
 export default function Logo({ size = 40 }) {
   return (
     <span className="logo">
-      <img src="/logo.svg" width={size} height={size} alt="El-Masry Store logo" />
+      <img src={`${import.meta.env.BASE_URL}logo.svg`} width={size} height={size} alt="El-Masry Store logo" />
       <span className="logo-text">
         <strong>EL-MASRY</strong>
         <em>STORE</em>

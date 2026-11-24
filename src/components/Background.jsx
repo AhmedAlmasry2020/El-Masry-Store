@@ -16,7 +16,7 @@ export default function Background() {
         <video
           ref={videoRef}
           className="bg-video"
-          src="/media/bg-video.mp4"
+          src={`${import.meta.env.BASE_URL}media/bg-video.mp4`}
           autoPlay
           muted
           loop
