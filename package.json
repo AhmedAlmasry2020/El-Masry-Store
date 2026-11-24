@@ -1,0 +1,25 @@
+{
+  "name": "el-masry-store",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Ahmed El-Masry",
+  "scripts": {
+    "dev": "concurrently -n web,tts \"vite\" \"node server/tts-proxy.mjs\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev:web": "vite",
+    "tts": "node server/tts-proxy.mjs"
+  },
+  "dependencies": {
+    "hls.js": "^1.7.4",
+    "msedge-tts": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^10.0.7",
+    "vite": "^5.4.8"
+  }
+}
